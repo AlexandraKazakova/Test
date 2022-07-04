@@ -12,21 +12,7 @@
 // ["Russia", "Denmark", "Kazan"] -> []
 
 
-// string[] arrayString = new string[] {"summer", "spring", "autumn", "sun", "day"};
-
-// var result = new string[arrayString.Length];
-// var realSize = 0;
-// for (int i = 0; i < arrayString.Length; i++)
-// {
-// 	if(arrayString[i].Length <= 3)
-// 	{
-// 		result[realSize] = arrayString[i];
-// 		Console.Write($"{result[realSize]}, ");
-// 		realSize++;
-// 	}
-// }
-
-string[] arrayString = new string[] {"summer", "spring", "autumn", "sun", "day"};
+string[] arrayString = new string[] {"summer", "spring", "autumn", "sun", "day", "may", "15", "255324", "GB"};
 
 string FindLenght(string[] array)
 {
@@ -59,4 +45,31 @@ string[] FillArray(string[] arrOne, string[] arrTwo)
 	return arrTwo;
 }
 
-Console.WriteLine(FillArray(arrayString, newArray));
+newArray = FillArray(arrayString, newArray);
+
+void PrintArray(string[] arr)
+{
+	int i = 0;
+	Console.Write($"[");
+	while(i < arr.Length - 1)
+	{
+		Console.Write($"\"{arr[i]}\", ");
+		i++;
+	}
+	Console.Write($"\"{arr[i]}\"]");
+}
+PrintArray(newArray);
+
+// string[] arrayString = new string[] {"summer", "spring", "autumn", "sun", "day"};
+
+// var result = new string[arrayString.Length];
+// var realSize = 0;
+// for (int i = 0; i < arrayString.Length; i++)
+// {
+// 	if(arrayString[i].Length <= 3)
+// 	{
+// 		result[realSize] = arrayString[i];
+// 		Console.Write($"{result[realSize]}, ");
+// 		realSize++;
+// 	}
+// }
