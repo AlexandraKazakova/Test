@@ -44,18 +44,8 @@ void PrintArray(string[] arr)
 	}
 	Console.Write($"\"{arr[i]}\"]");
 }
-PrintArray(newArray);
-
-// string[] arrayString = new string[] {"summer", "spring", "autumn", "sun", "day"};
-
-// var result = new string[arrayString.Length];
-// var realSize = 0;
-// for (int i = 0; i < arrayString.Length; i++)
-// {
-// 	if(arrayString[i].Length <= 3)
-// 	{
-// 		result[realSize] = arrayString[i];
-// 		Console.Write($"{result[realSize]}, ");
-// 		realSize++;
-// 	}
-// }
+if (newArray.Length == 0)
+{
+	Console.Write($"[]");
+}
+else PrintArray(newArray);
