@@ -1,18 +1,4 @@
-﻿// Написать программу, которая из имеющегося массива строк формирует массив из строк,
-// длина которых меньше либо равна 3 символа. Первоначальный массив можно ввести с клавиатуры,
-// либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями,
-// лучше обойтись исключительно массивами.
-
-// **Примеры**:
-
-// ["hello", "2", "world", ":-)"] -> ["2", ":-)"]
-
-// ["1234", "1567", "-2", "computer science"] -> ["-2"]
-
-// ["Russia", "Denmark", "Kazan"] -> []
-
-
-string[] arrayString = new string[] {"summer", "spring", "autumn", "sun", "day", "may", "15", "255324", "GB"};
+﻿string[] arrayString = new string[] {"summer", "spring", "autumn", "sun", "day", "may", "15", "255324", "GB"};
 
 string FindLenght(string[] array)
 {
@@ -27,7 +13,7 @@ string FindLenght(string[] array)
 	return Convert.ToString(size);
 }
 
-int lenghthArr = Convert.ToInt16(FindLenght(arrayString));
+int lenghthArr = int.Parse(FindLenght(arrayString));
 
 string[] newArray = new string[lenghthArr];
 
